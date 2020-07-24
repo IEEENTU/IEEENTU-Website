@@ -49,31 +49,31 @@ const IEEENav = (props) => {
   
     return (
       <div>
-        <Navbar style={{backgroundColor: '#0ca3cc', fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif' }} light expand="md">
-          <NavbarBrand href="/">IEEE</NavbarBrand>
+        <Navbar style={{zIndex: 3, backgroundColor: '#066e94', fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif', color:'white' }} dark expand="md">
+          <NavbarBrand style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif', color:'white'}} href="/">IEEE</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
             <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/about">About us</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/about">About us</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/team">Team</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/team">Team</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/events">Events</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/events">Events</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/projects">Projects</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/projects">Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact">Contact Us</NavLink>
+                <NavLink style={{fontFamily: 'Muli'}} href="/contact">Contact Us</NavLink>
               </NavItem>
             </Nav>
-            <NavbarText>Advancing Technology for Humanity</NavbarText>
+            <NavbarText style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif', color:'white'}}>Advancing Technology for Humanity</NavbarText>
           </Collapse>
         </Navbar>
       </div>
