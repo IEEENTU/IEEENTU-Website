@@ -1,3 +1,13 @@
 /* .Main {
     font-family: 'Muli';
 } */
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    color: white;
+  }
+
+a.social:hover {
+transform: translateY(-4px);
+}

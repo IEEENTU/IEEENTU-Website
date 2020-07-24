@@ -13,6 +13,7 @@ import {
   NavLink,
   NavbarText
 } from 'reactstrap';
+import Socials from './Socials'
 // Do npm run build after making changes in order to see them
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         {/* <h1>Welcome to IEEE</h1> */}
         <IEEENav />
         <Main />
+        <Socials />
       </div>
     );
   }
