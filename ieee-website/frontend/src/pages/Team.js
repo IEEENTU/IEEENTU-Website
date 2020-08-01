@@ -4,56 +4,22 @@ import {
   CardTitle, CardSubtitle,CardFooter, Button, CardLink,CardDeck,
 } from 'reactstrap';
 import logo from '../logo.png';
+import Zoom from 'react-reveal/Zoom';
+import Tada from 'react-reveal/Tada';
 
 
+const CustomStyle ={
+  fontFamily: 'Muli',
+  textAlign:'center'
+  // color:'black'
+}
 const Team = (props) => {
   return (
-    // <div style={{width:'100%'}}>
-    //   <table>
-    //     <tr sm="6" style={{display:'flex', flexDirection:'row'}}>
-    //       <td>
-    //       <Card body outline color="info" inverse style={{ backgroundColor: '#333', borderColor: '#333',flex:1 }} className="text-center">
-    //       <CardHeader tag="h3">Aishik Nagar</CardHeader>
-    //     <CardBody>
-    //       <CardTitle>iNTUition Chair</CardTitle>
-    //       <CardSubtitle>Technical Director</CardSubtitle>
-    //       <img src={logo} alt="Card image cap" />
-    //       <br></br>
-    //       <Button color="secondary">LiknedIn</Button>
-    //     </CardBody>
-    //     {/* <CardFooter>Footer</CardFooter> */}
-    //   </Card>
-    //       </td>
-    //       <td>
-    //       <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333',flex:1 }} className="text-center">
-    //       <CardHeader tag="h3">Aishik Nagar</CardHeader>
-    //     <CardBody>
-    //       <CardTitle>iNTUition Chair</CardTitle>
-    //       <CardSubtitle>Technical Director</CardSubtitle>
-    //       <img src={logo} alt="Card image cap" />
-    //       <br></br>
-    //       <Button color="secondary">LiknedIn</Button>
-    //     </CardBody>
-    //     {/* <CardFooter>Footer</CardFooter> */}
-    //   </Card>
-    //       </td>
-    //       <td>
-    //       <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333',flex:1 }} className="text-center">
-    //       <CardHeader tag="h3">Aishik Nagar</CardHeader>
-    //     <CardBody>
-    //       <CardTitle>iNTUition Chair</CardTitle>
-    //       <CardSubtitle>Technical Director</CardSubtitle>
-    //       <img src={logo} alt="Card image cap" />
-    //       <br></br>
-    //       <Button color="secondary">LinkedIn</Button>
-    //     </CardBody>
-    //     {/* <CardFooter>Footer</CardFooter> */}
-    //   </Card>
-    //       </td>
-    //     </tr>
-    //   </table>
-    // </div>
     <div>
+      <Tada>
+          <h1 style={CustomStyle}>Meet Our Team!</h1>
+        </Tada>
+      <Zoom>
     <CardDeck>
       <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
       <CardHeader tag="h3">Aishik Nagar</CardHeader>
@@ -113,6 +79,7 @@ const Team = (props) => {
         </CardBody>
       </Card>
     </CardDeck>
+    </Zoom>
   </div>
   );
 };
