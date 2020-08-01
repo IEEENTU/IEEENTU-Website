@@ -5,7 +5,7 @@ import '../../css/BackgroundVideo.module.css';
 
 const CustomStyle ={
   fontFamily: 'Muli',
-  color:'black'
+  // color:'black'
 }
 
 // const videoSource = "https://player.vimeo.com/external/395684895.sd.mp4?s=c5f81ac05cb1506db35c7811b1bbd9c9049dc1a2&profile_id=139&oauth2_token_id=57447761"

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'); */
 
 :root {
 	--primary-color: #3a4052;
@@ -11,7 +11,7 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Futura,Trebuchet MS,Arial,sans-serif';
 	line-height: 1.5;
 }
 
@@ -74,13 +74,13 @@ h1 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 2;
-  font-family: 'Muli';
+  font-family: 'Futura,Trebuchet MS,Arial,sans-serif';
 }
 
 .btn {
 	display: inline-block;
 	padding: 10px 30px;
-	background: var(--primary-color);
+	background: var'Futura,Trebuchet MS,Arial,sans-serif'(--primary-color);
 	color: #fff;
 	border-radius: 5px;
 	border: solid #fff 1px;

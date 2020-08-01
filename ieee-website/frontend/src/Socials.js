@@ -8,7 +8,7 @@ import {
   } from "@fortawesome/free-brands-svg-icons";
 
 const footerStyle = {
-    zIndex:3,
+    // zIndex:3,
     backgroundColor: "#066e94",
     fontSize: "20px",
     color: "white",

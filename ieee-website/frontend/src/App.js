@@ -22,7 +22,7 @@ class App extends Component {
         {/* <h1>Welcome to IEEE</h1> */}
         <IEEENav />
         <Main />
-        <Socials />
+        {/* <Socials /> */}
       </div>
     );
   }
