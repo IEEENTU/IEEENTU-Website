@@ -6,6 +6,7 @@ import {
 import logo from '../logo.png';
 import Zoom from 'react-reveal/Zoom';
 import Tada from 'react-reveal/Tada';
+import Fade from 'react-reveal/Fade';
 
 
 const CustomStyle ={
@@ -16,10 +17,10 @@ const CustomStyle ={
 const Team = (props) => {
   return (
     <div>
-      <Tada>
+      <Fade>
           <h1 style={CustomStyle}>Meet Our Team!</h1>
-        </Tada>
-      <Zoom>
+        </Fade>
+      <Fade>
     <CardDeck>
       <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
       <CardHeader tag="h3">Aishik Nagar</CardHeader>
@@ -27,7 +28,7 @@ const Team = (props) => {
         <CardBody>
           <CardTitle>iNTUition Chair</CardTitle>
           <CardSubtitle>Technical Director</CardSubtitle>
-          <Button>LinkedIn</Button>
+          <Button color="info">LinkedIn</Button>
         </CardBody>
       </Card>
       <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
@@ -79,7 +80,8 @@ const Team = (props) => {
         </CardBody>
       </Card>
     </CardDeck>
-    </Zoom>
+    <br></br>
+    </Fade>
   </div>
   );
 };

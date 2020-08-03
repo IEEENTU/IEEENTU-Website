@@ -39,7 +39,7 @@ const IEEENav = (props) => {
                 <NavLink style={{fontFamily: 'Muli'}} href="/events">Events</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink style={{fontFamily: 'Muli'}} href="/projects">Projects</NavLink>
+                <NavLink disabled style={{fontFamily: 'Muli'}} href="/projects">Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink style={{fontFamily: 'Muli'}} href="/contact">Contact Us</NavLink>

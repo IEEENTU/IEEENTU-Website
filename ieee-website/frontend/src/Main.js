@@ -7,7 +7,7 @@ import Socials from './Socials'
 
 import Home from './pages/Home';
 import Team from './pages/Team';
-import About from './pages/About';
+import AboutLayout from './pages/About';
 import Events from './pages/Events';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -21,7 +21,7 @@ const Main = () => {
             <Socials />
         </Route>
         <Route path="/about">
-            <About />
+            <AboutLayout />
             <Socials />
         </Route>
         <Route path="/contact">
