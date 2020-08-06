@@ -15,21 +15,7 @@ import { Jumbotron, Button, Container, Row, Col } from 'reactstrap';
 // import { ListGroup, ListGroupItem,Jumbotron,Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 // import { Collapse, CardBody, Card } from 'reactstrap';
 import { ListGroup, ListGroupItem,UncontrolledCollapse , CardBody, Card } from 'reactstrap';
-// import {
-//   Button,
-//   Container,
-//   Divider,
-//   Grid,
-//   Header,
-//   Icon,
-//   Image,
-//   List,
-//   Menu,
-//   Segment,
-//   Sidebar,
-//   Visibility,
-//   ResponsiveContainer
-// } from 'semantic-ui-react'
+
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -40,59 +26,44 @@ const { MediaContextProvider, Media } = createMedia({
 })
 
 const AboutLayout = () => (
-  /*<div>
-    { <Segment style={{ padding: '8em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
-        <Grid.Row>
-          <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              Who We Are and What We Do
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-             ***
-             Add text
-             ***
-            </p>
-
-          </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment> }*/
+  
     <div>
-      
+        <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>About Us</h1>
       <Jumbotron fluid>
         <Container fluid>
-        <Row><Col>
-          <h1 className="display-3">About IEEE</h1>
+        <Row><Col xs="auto">
+          <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>What is IEEE?</h2>
           <p className="lead">IEEE - The Institute of Electrical and Electronics Engineers - is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
            IEEE and its members inspire a global community to innovate for a better tomorrow through its more than 419,000 members in over 160 countries, and its highly cited publications, conferences, technology standards,
-            and professional and educational activities. IEEE is the trusted “voice” for engineering, computing, and technology information around the globe. IEEE also has technical Societies that provide benefits to members within specialized fields of interest ranging from Aerospace to Nuclear Engineering and many more. More details about IEEE can be found here.</p>
+            and professional and educational activities. IEEE is the trusted “voice” for engineering, computing, and technology information around the globe. IEEE also has technical Societies that provide benefits to members within specialized fields of interest ranging from Aerospace to Nuclear Engineering and many more. More details about IEEE can be found <a href="https://www.ieee.org/">here.</a></p>
           </Col></Row>
         </Container>
       </Jumbotron>
 
       <Jumbotron fluid>
         <Container fluid>
-        <Row><Col>
-          <h1 className="display-3">About IEEE-NTU</h1>
-          <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps. More info about our past events can be found here.</p>
+        <Row><Col xs="auto">
+          <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>What is IEEE-NTU?</h2>
+          <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps</p>
           </Col></Row>
         </Container>
       </Jumbotron>
-
       <Jumbotron fluid>
         <Container fluid>
+
         <Row>
-          <Col>
-            <h1 className="display-3">Our Mission</h1>
-            <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps. More info about our past events can be found here.</p>
+          <Col xs="auto" sm="6">
+
+            <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Mission</h2>
+            <p className="lead">IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
           </Col>
-          <Col>
-            <h1 className="display-3">About IEEE-NTU</h1>
-            <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps. More info about our past events can be found here.</p>
+          <Col xs="auto" sm="6">
+
+            <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Vision</h2>
+            <p className="lead">IEEE will be essential to the global technical community and to technical professionals everywhere, 
+            and be universally recognized for the contributions of technology and of technical professionals in 
+            improving global conditions.</p>
+
           </Col>
 
         </Row>
@@ -124,15 +95,21 @@ const AboutLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment> */}
-    <Jumbotron fluid>
+    <Jumbotron fluid > 
         <Container fluid>
         <Row><Col>
-          <h1 className="display-3">About IEEE-NTU</h1>
-          <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps. More info about our past events can be found here.</p>
+          <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Organizational Aims and Objectives</h2>
+          <ul className="lead">
+         <li> Promote advancement of technology through our activities</li>
+<li>Develop the ideals of teamwork and collaboration among our members</li>
+<li>Promote work in a professional setting</li>
+<li>Developing skills of leadership and management among members</li>
+<li>Inspire people to get into the world of tech</li>
+</ul>
           </Col></Row>
         </Container>
       </Jumbotron>
-      <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>FAQ</h1>
+      <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>FAQ</h2>
     <Jumbotron>
     {/* <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
       Toggle
@@ -190,6 +167,14 @@ And yes, we give CCA points as well!
         <Card outline color="primary">
           <CardBody style={{fontFamily: 'Muli'}}>
             <p>As long as you are a NTU student and are passionate about our mission and vision, you are welcome to join us!</p>
+            </CardBody>
+            </Card>
+            </UncontrolledCollapse>
+      <ListGroupItem style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} color="success" tag="button" id="toggler6">I have a question that is not listed here?</ListGroupItem>
+      <UncontrolledCollapse toggler="#toggler6">
+        <Card outline color="success">
+          <CardBody style={{fontFamily: 'Muli'}}>
+            <p>You can drop any queries you have at <a href="mailto:ieeentuchapter@gmail.com">ieeentuchapter@gmail.com</a></p>
             </CardBody>
             </Card>
             </UncontrolledCollapse>

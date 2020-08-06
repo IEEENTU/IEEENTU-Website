@@ -6,6 +6,12 @@ import {
 import logo from '../logo.png';
 import Fade from 'react-reveal/Fade';
 
+const CustomStyle ={
+  fontFamily: 'Muli',
+  textAlign:'center'
+  // color:'black'
+}
+
 const hack2019 = [
     {
       src: '',
@@ -72,6 +78,7 @@ const hack2019 = [
 
 const Events = (props) => {
     return (
+      <div>
       <div>
         <Fade>
             <h1 style={CustomStyle}>Upcoming Events</h1>
@@ -161,6 +168,7 @@ const Events = (props) => {
         </Col> 
 
         </Row>
+    </div>
     </div>
     );
   };
