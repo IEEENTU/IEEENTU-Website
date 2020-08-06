@@ -4,8 +4,11 @@ import {
     faYoutube,
     faGithubSquare,
     faLinkedin,
-    faInstagram
+    faInstagram,
   } from "@fortawesome/free-brands-svg-icons";
+  import {
+    faEnvelope
+  } from "@fortawesome/free-regular-svg-icons";
 
 const footerStyle = {
     // zIndex:3,
@@ -50,6 +53,9 @@ const Socials = () => {
       <a href="https://www.instagram.com/"
   className="instagram social">
   <FontAwesomeIcon icon={faInstagram} size="2x" />
+</a>
+<a href="mailto:someone@something.com?subject=your title&body=TThe message" className="mail social">
+    <FontAwesomeIcon icon={faEnvelope} style={{color:"white"}} size="2x"></FontAwesomeIcon>
 </a>
       </div>
     </div>

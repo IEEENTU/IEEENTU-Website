@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Youtube from 'react-youtube'
 import '../../css/BackgroundVideo.module.css';
+import IEEENav from '../Navbar';
 // import { Switch, Route } from 'react-router-dom';
 
 const CustomStyle ={
@@ -52,9 +53,10 @@ const Home = () => {
       </video>
       </div>
       <div class="content">
-        <h1>Welcome to IEEE</h1>
-        <h3>NTU Student branch</h3>
-        <a href="/about" class="btn">About Us</a>
+        <h1 style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Welcome to</h1>
+        <h1 style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>IEEE</h1>
+        <h3 style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>NTU Student branch</h3>
+        <a style={{fontFamily: 'Muli'}} href="/about" class="btn">About Us</a>
       </div>
     </section>
   );

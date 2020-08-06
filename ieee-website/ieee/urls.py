@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
+from backend import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',TemplateView.as_view(template_name='index.html')),
@@ -23,5 +24,6 @@ urlpatterns = [
     path('about/',TemplateView.as_view(template_name='index.html')),
     path('events/',TemplateView.as_view(template_name='index.html')),
     path('projects/',TemplateView.as_view(template_name='index.html')),
-    path('contact/',TemplateView.as_view(template_name='index.html'))
+    # path('contact/',TemplateView.as_view(template_name='index.html')),
+    # path('contact/',views.form_view),
 ]

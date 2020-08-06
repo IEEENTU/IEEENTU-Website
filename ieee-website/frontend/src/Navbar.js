@@ -41,9 +41,9 @@ const IEEENav = (props) => {
               <NavItem>
                 <NavLink disabled style={{fontFamily: 'Muli'}} href="/projects">Projects</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink style={{fontFamily: 'Muli'}} href="/contact">Contact Us</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
             <NavbarText style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif', color:'white'}}>Advancing Technology for Humanity</NavbarText>
           </Collapse>

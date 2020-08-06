@@ -14,7 +14,6 @@ import { ListGroup, ListGroupItem,Jumbotron,Button, Form, FormGroup, Label, Inpu
 // import { Collapse, CardBody, Card } from 'reactstrap';
 import { UncontrolledCollapse , CardBody, Card } from 'reactstrap';
 
-
 const Contact = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +22,7 @@ const Contact = (props) => {
     <div>
       <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Contact Us</h1>
       <Jumbotron>
-    <Form>
+    {/* <Form>
       <FormGroup>
         <Label for="exampleEmail">Email</Label>
         <Input type="email" name="email" id="exampleEmail" placeholder="" />
@@ -90,9 +89,16 @@ const Contact = (props) => {
           <Input type="checkbox" />{' '}
           Check me out
         </Label>
-      </FormGroup>
-      <Button>Submit</Button>
-    </Form>
+      </FormGroup> */}
+      <h1>Create a Post </h1>
+<form action="/api/form" method="GET">
+    Title: <input type="text" name="title"/><br/>
+    Content: <br/>
+    <textarea cols="35" rows="8" name="content">
+        </textarea><br/>
+    <input type="submit" value="Post"/>
+</form>
+      {/* <Button>Submit</Button> */}
     </Jumbotron>
     <br />
     <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>FAQ</h1>
@@ -148,7 +154,7 @@ And yes, we give CCA points as well!
             </CardBody>
             </Card>
             </UncontrolledCollapse>
-      <ListGroupItem style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} color="secondary" tag="button" id="toggler5">Who can join IEEE NTU Student Branch?</ListGroupItem>
+      <ListGroupItem style={{fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} color="primary" tag="button" id="toggler5">Who can join IEEE NTU Student Branch?</ListGroupItem>
       <UncontrolledCollapse toggler="#toggler5">
         <Card>
           <CardBody style={{fontFamily: 'Muli'}}>
