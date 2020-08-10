@@ -160,7 +160,7 @@ const Events = (props) => {
           
             <h4 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} className="display-3">iNTUition v6.0</h4>
             <p style={CustomStyle} className="lead">Our flagship hackathon, iNTUition v6.0 saw over 200 participants who all went back with sweet memories to cherish . Apart from the very informative workshpos we had on APIs, Data Science and Machine learning,
-            the event produced some amazing hardware, AI and cloud hacks. The spectacular event offered some amzing prizes and merch from a wide range of sponsorers including HP, 
+            the event produced some amazing hardware, AI and cloud hacks. The spectacular event offered some amazing prizes and merch from a wide range of sponsorers including HP, 
             Digital Ocean, Google, Zalora, 12Geeks etc. </p>
         </Col> 
 
