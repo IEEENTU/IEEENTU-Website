@@ -33,7 +33,7 @@ const AboutLayout = () => (
         <Container fluid>
         <Row><Col xs="auto">
           <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>What is IEEE?</h2>
-          <p className="lead">IEEE - The Institute of Electrical and Electronics Engineers - is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+          <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">IEEE - The Institute of Electrical and Electronics Engineers - is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
            IEEE and its members inspire a global community to innovate for a better tomorrow through its more than 419,000 members in over 160 countries, and its highly cited publications, conferences, technology standards,
             and professional and educational activities. IEEE is the trusted “voice” for engineering, computing, and technology information around the globe. IEEE also has technical Societies that provide benefits to members within specialized fields of interest ranging from Aerospace to Nuclear Engineering and many more. More details about IEEE can be found <a href="https://www.ieee.org/">here.</a></p>
           </Col></Row>
@@ -44,7 +44,7 @@ const AboutLayout = () => (
         <Container fluid>
         <Row><Col xs="auto">
           <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>What is IEEE-NTU?</h2>
-          <p className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps</p>
+          <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">We are the NTU Student Chapter of IEEE Singapore. IEEE NTU Student Branch is one of the oldest clubs in NTU with our constitution dating back to 1990. We provide opportunities to meet and learn from fellow IEEE Student and Graduate Student Members and engage with professional IEEE members locally. We offer programs, activities and professional networking opportunities that build critical skills outside of the classroom and contribute to a student’s educational, technical and professional development. We organize activities in all branches of engineering, especially electrical and electronic engineering, and computer science ranging from hackathons to coding bootcamps</p>
           </Col></Row>
         </Container>
       </Jumbotron>
@@ -55,12 +55,12 @@ const AboutLayout = () => (
           <Col xs="auto" sm="6">
 
             <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Mission</h2>
-            <p className="lead">IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
+            <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
           </Col>
           <Col xs="auto" sm="6">
 
             <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Vision</h2>
-            <p className="lead">IEEE will be essential to the global technical community and to technical professionals everywhere, 
+            <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">IEEE will be essential to the global technical community and to technical professionals everywhere, 
             and be universally recognized for the contributions of technology and of technical professionals in 
             improving global conditions.</p>
 
@@ -99,7 +99,7 @@ const AboutLayout = () => (
         <Container fluid>
         <Row><Col>
           <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Organizational Aims and Objectives</h2>
-          <ul className="lead">
+          <ul style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">
          <li> Promote advancement of technology through our activities</li>
 <li>Develop the ideals of teamwork and collaboration among our members</li>
 <li>Promote work in a professional setting</li>

@@ -11,3 +11,11 @@ a.social {
 a.social:hover {
 transform: translateY(-4px);
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  padding: 7px 14px;
+}

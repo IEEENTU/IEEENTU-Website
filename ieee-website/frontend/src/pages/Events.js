@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import {
-  Card, CardImg,CardHeader, CardText, CardBody,CardDeck,Jumbotron, Container, Row, Col,   Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  Card, CardImg,CardHeader, CardText, CardBody,CardDeck,Jumbotron, Container, Row, Col,   UncontrolledCarousel,
+  
 
 } from 'reactstrap';
 import logo from '../logo.png';
@@ -38,7 +35,7 @@ const CustomStyle ={
 const hack2019 = [
     {
       src: hk1,
-      key: '1'
+      key: '1',
       
     },
     {
@@ -101,88 +98,29 @@ const hack2019 = [
   ];
 
 const Events = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next1 = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === ieelrn2019.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous1 = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? ieelrn2019.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides1 = ieelrn2019.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img className="d-block w-100" src={item.src} alt={item.altText} />
-        
-      </CarouselItem>
-    );
-
-    
-  });
-
-  const next2 = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === hack2019.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous2 = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? hack2019.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const slides2 = hack2019.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img className="d-block w-100" src={item.src}  />
-      </CarouselItem>
-    );
-  });
-
     return (
       <div>
       <div>
         <Fade>
-            <h1 style={CustomStyle}>Upcoming Events</h1>
+            <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Upcoming Events</h1>
             <p style={CustomStyle}>Just a glimpse of some of the amazing events we've planned for the academic year!</p>
           </Fade>
         <Fade>
       <CardDeck>
         <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
-        <CardHeader tag="h3">iNTUition 7.0</CardHeader>
+        <CardHeader style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} tag="h3">iNTUition 7.0</CardHeader>
           <CardImg top width="100%" src={iNTUition} alt="Card image cap" />
           <CardBody>
-          <CardText>
+          <CardText style={CustomStyle}>
           Our flagship event, iNTUition is NTU's only student-run 24 hour hackathon, with sponsors like HP, Google, SEA, Blackrock, PayPal and Redbull over
           the years since its conception in 2014. iNTUition v6.0 in 2019 saw over 300 participants! </CardText>
           </CardBody>
         </Card>
         <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
-        <CardHeader tag="h3">Techathlon</CardHeader>
+        <CardHeader style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} tag="h3">Techathlon</CardHeader>
           <CardImg top width="100%" src={techathlon} alt="Card image cap" />
           <CardBody>
-          <CardText>
+          <CardText style={CustomStyle}>
              A real tech bonanza to look out for this year, filled with projects and workshops on Computer Vision, Data Science, Client and Server side programming,
              Git and Cyber security among others, with the opportunity to collaborate with other clubs in NTU! </CardText>
           </CardBody>
@@ -191,20 +129,20 @@ const Events = (props) => {
       <br></br>
       <CardDeck>
       <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
-        <CardHeader tag="h3">Blog @ IEEE-NTU</CardHeader>
+        <CardHeader style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} tag="h3">Blog @ IEEE-NTU</CardHeader>
           <CardImg top width="100%" src={blog} alt="Card image cap" />
           <CardBody>
-          <CardText>
+          <CardText style={CustomStyle}>
             Learn something new, or even share something you know yourself! Starting this year, we're introducing a bimonthly blog for all club members
             to contribute on a topic of their choice. Come on, explore that creative writing side of yours! </CardText>
           </CardBody>
         </Card>
 
         <Card body outline color="info" inverse style={{ backgroundColor: '#333' }} className="text-center">
-        <CardHeader tag="h3">Outreach</CardHeader>
+        <CardHeader style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} tag="h3">Outreach</CardHeader>
           <CardImg top width="100%" src={outreach} alt="Card image cap" />
           <CardBody>
-          <CardText>
+          <CardText style={CustomStyle}>
             At IEEE NTU Student Branch, we firmly believe in giving back to the community in whatever way possible. We look forward to seeing you at the
             tech and non-tech volunteer events we take part in and really make a difference in this world!</CardText>
           </CardBody>
@@ -214,31 +152,20 @@ const Events = (props) => {
       </Fade>
     </div>
     <div>
-        <h1 style={CustomStyle}>What we did in 2019!</h1>
+        <h1 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>What we did in 2019!</h1>
         <Jumbotron fluid>
         <Row>
              <Col xs="auto" sm="6"> 
         
           
-            <h4 className="display-3">iNTUition v6.0</h4>
-            <p className="lead">Our flagship hackathon, iNTUition v6.0 saw over 200 participants who all went back with sweet memories to cherish . Apart from the very informative workshpos we had on APIs, Data Science and Machine learning,
+            <h4 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} className="display-3">iNTUition v6.0</h4>
+            <p style={CustomStyle} className="lead">Our flagship hackathon, iNTUition v6.0 saw over 200 participants who all went back with sweet memories to cherish . Apart from the very informative workshpos we had on APIs, Data Science and Machine learning,
             the event produced some amazing hardware, AI and cloud hacks. The spectacular event offered some amzing prizes and merch from a wide range of sponsorers including HP, 
             Digital Ocean, Google, Zalora, 12Geeks etc. </p>
-                
-        
         </Col> 
 
         <Col xs="auto" sm="6">
-        <Carousel
-      activeIndex={activeIndex}
-      next={next2}
-      previous={previous2}
-    >
-      <CarouselIndicators items={hack2019} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides2}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous2} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next2} />
-    </Carousel>  
+        <UncontrolledCarousel items={hack2019} />
         
         </Col> 
 
@@ -250,24 +177,15 @@ const Events = (props) => {
              <Col xs="auto" sm="6">  
         
           
-            <h4 className="display-3">IEEELearn 2019</h4>
-            <p className="lead">IEEELearn 2019 was an introductory level workshop series with the main aim of equiping the participants with the skills required for the very important
+            <h4 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}} className="display-3">IEEELearn 2019</h4>
+            <p style={CustomStyle} className="lead">IEEELearn 2019 was an introductory level workshop series with the main aim of equiping the participants with the skills required for the very important
             data science, machine learning and AI needed in this era. True to its aim, all participants enjoyed learning the basics of Python, and Data analysis </p>
                 
         
         </Col> 
 
         <Col xs="auto" sm="6">
-        <Carousel
-      activeIndex={activeIndex}
-      next={next1}
-      previous={previous1}
-    >
-      <CarouselIndicators items={ieelrn2019} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides1}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous1} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next1} />
-    </Carousel> 
+        <UncontrolledCarousel items={ieelrn2019} />
         
         </Col> 
 
