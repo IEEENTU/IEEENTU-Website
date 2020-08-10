@@ -55,14 +55,22 @@ const AboutLayout = () => (
           <Col xs="auto" sm="6">
 
             <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Mission</h2>
+<<<<<<< HEAD
             <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
+=======
+            <p className="lead">To foster the spirit of innovation and promote the passion for technology among NTU students</p>
+>>>>>>> 51c7f266b8ec83e2fdbb9083c0267ad0ea0d11ff
           </Col>
           <Col xs="auto" sm="6">
 
             <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Our Vision</h2>
+<<<<<<< HEAD
             <p style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">IEEE will be essential to the global technical community and to technical professionals everywhere, 
             and be universally recognized for the contributions of technology and of technical professionals in 
             improving global conditions.</p>
+=======
+            <p className="lead">To create a community where students learn and contribute to technological advancements to improve student life at NTU</p>
+>>>>>>> 51c7f266b8ec83e2fdbb9083c0267ad0ea0d11ff
 
           </Col>
 
@@ -99,12 +107,21 @@ const AboutLayout = () => (
         <Container fluid>
         <Row><Col>
           <h2 style={{textAlign:'center',fontFamily: 'Futura,Trebuchet MS,Arial,sans-serif'}}>Organizational Aims and Objectives</h2>
+<<<<<<< HEAD
           <ul style={{textAlign:'center',fontFamily: 'Muli'}} className="lead">
          <li> Promote advancement of technology through our activities</li>
 <li>Develop the ideals of teamwork and collaboration among our members</li>
 <li>Promote work in a professional setting</li>
 <li>Developing skills of leadership and management among members</li>
 <li>Inspire people to get into the world of tech</li>
+=======
+          <ul className="lead">
+         <li> To present opportunities for students to nurture educational, technical, and professional development and to promote peer-to-peer knowledge transfer and networking among students for technical education</li>
+<li> To conduct technical workshops with actionable outcomes</li>
+<li>To bring students together to work on community projects</li>
+<li>To organize hackathons and other project-based competitions</li>
+<li>To inspire people to get into the world of tech</li>
+>>>>>>> 51c7f266b8ec83e2fdbb9083c0267ad0ea0d11ff
 </ul>
           </Col></Row>
         </Container>
